@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\NAL\Server for Trackers Service\Nal.GpsReport.DLL-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5752B909-3BDA-4E96-863D-D6CEAC4A474B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Nal.GpsReport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.3.6.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Nal.GpsReport</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PecosB3Message.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="EmergencyState.cs" />
+    <Compile Include="GnssNetwork.cs" />
+    <Compile Include="GnssSatellite.cs" />
+    <Compile Include="NalGpsReport7.cs" />
+    <Compile Include="IntExtensions.cs" />
+    <Compile Include="GpsReport.cs" />
+    <Compile Include="NalGpsReport.cs" />
+    <Compile Include="NalGpsReport3.cs" />
+    <Compile Include="NalGpsReport4.cs" />
+    <Compile Include="NalGpsReport5.cs" />
+    <Compile Include="NalGpsPoint3.cs" />
+    <Compile Include="NalGpsPoint4.cs" />
+    <Compile Include="NalGpsReport6.cs" />
+    <Compile Include="Nal10ByteGpsReport0.cs" />
+    <Compile Include="PecosB5Message.cs" />
+    <Compile Include="PecosL0Message.cs" />
+    <Compile Include="PecosMessage.cs" />
+    <Compile Include="PecosP3GpsReport.cs" />
+    <Compile Include="PecosP3Message.cs" />
+    <Compile Include="PecosP4GpsReport.cs" />
+    <Compile Include="PecosP4Message.cs" />
+    <Compile Include="PecosT3Message.cs" />
+    <Compile Include="PositionFix.cs" />
+    <Compile Include="PositionFixExtensions.cs" />
+    <Compile Include="StlSatellite.cs" />
+    <Compile Include="StlStatus.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

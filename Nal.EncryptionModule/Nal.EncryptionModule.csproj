@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\NAL\Server for Trackers Service\Nal.EncryptionModule.DLL-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81C1B61B-4C2F-4FB8-A843-4322F3F9D590}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Nal.EncryptionModule</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.2.1</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Nal.EncryptionModule</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Form.cs" />
+    <Compile Include="AccountProperties_Form.cs" />
+    <Compile Include="Aes.cs" />
+    <Compile Include="CryptoOfficerRole.cs" />
+    <Compile Include="CryptoOfficerControl.cs" />
+    <Compile Include="Edc.cs" />
+    <Compile Include="EncryptionUser.cs" />
+    <Compile Include="Erc.cs" />
+    <Compile Include="ErcStr.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Tdes.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About_Form.resx" />
+    <EmbeddedResource Include="AccountProperties_Form.resx" />
+    <EmbeddedResource Include="CryptoOfficerControl.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

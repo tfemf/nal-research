@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\NAL\Server for Trackers Service\ServerForTrackersService.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C1DB818-0C75-4D05-AFD5-768EEF5720DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>ServerForTrackersService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>8.6.5.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Nal</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Nal.EncryptionModule">
+      <HintPath>lib\Nal.EncryptionModule.DLL</HintPath>
+    </Reference>
+    <Reference Include="Nal.GpsReport">
+      <HintPath>lib\Nal.GpsReport.DLL</HintPath>
+    </Reference>
+    <Reference Include="Nal.ServerForTrackers.Plugins">
+      <HintPath>lib\Nal.ServerForTrackers.Plugins.DLL</HintPath>
+    </Reference>
+    <Reference Include="Nal.Sms">
+      <HintPath>lib\Nal.Sms.DLL</HintPath>
+    </Reference>
+    <Reference Include="OpenPop">
+      <HintPath>lib\OpenPop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ServerForTrackers\Common\GuiItem.cs" />
+    <Compile Include="ServerForTrackers\Common\TcpProtocolServerInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\BatchFile.cs" />
+    <Compile Include="ServerForTrackers\Common\CommLinkInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\DataServerInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\DataTypeSettings.cs" />
+    <Compile Include="ServerForTrackers\Common\EmailAccountInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\LogFile.cs" />
+    <Compile Include="ServerForTrackers\Common\LoggingDirectory.cs" />
+    <Compile Include="ServerForTrackers\Common\Plugin.cs" />
+    <Compile Include="ServerForTrackers\Common\RudicsAccountInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\SbdDirectIPAccountInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\ServerModemInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\TwoWayTransModes.cs" />
+    <Compile Include="ServerForTrackers\Common\CallProtocol.cs" />
+    <Compile Include="ServerForTrackers\Common\LoggingFormat.cs" />
+    <Compile Include="ServerForTrackers\Common\Protocol.cs" />
+    <Compile Include="ServerForTrackers\Common\DataCategory.cs" />
+    <Compile Include="ServerForTrackers\Common\DataType.cs" />
+    <Compile Include="ServerForTrackers\Common\ModemInfoTypes.cs" />
+    <Compile Include="ServerForTrackers\Common\Utils.cs" />
+    <Compile Include="ServerForTrackers\Common\AddMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\ActMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\InfMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\RemMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\SndMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\ConMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\SimpleMessageReceivedEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\StringEventHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\AddMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\ActMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\InfMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\RemMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\SndMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\ConMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\SimpleMessageReceivedEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\StringEventArgs.cs" />
+    <Compile Include="ServerForTrackers\Common\ControlMessageHandler.cs" />
+    <Compile Include="ServerForTrackers\Common\RUPair.cs" />
+    <Compile Include="ServerForTrackers\Common\RURequestInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\RUResponseInfo.cs" />
+    <Compile Include="ServerForTrackers\Common\RUPairsFile.cs" />
+    <Compile Include="ServerForTrackers\Common\ServiceSettings.cs" />
+    <Compile Include="ServerForTrackers\Common\XmlNodeExtentions.cs" />
+    <Compile Include="ServerForTrackers\Common\GetElementAsException.cs" />
+    <Compile Include="ServerForTrackers\Service\CharProcessor.cs" />
+    <Compile Include="ServerForTrackers\Service\CommLink.cs" />
+    <Compile Include="ServerForTrackers\Service\TcpProtocolServer.cs" />
+    <Compile Include="ServerForTrackers\Service\DataSerializer.cs" />
+    <Compile Include="ServerForTrackers\Service\EmailAccount.cs" />
+    <Compile Include="ServerForTrackers\Service\HiddenForm.cs" />
+    <Compile Include="ServerForTrackers\Service\ProjectInstaller.cs" />
+    <Compile Include="ServerForTrackers\Service\RudicsClient.cs" />
+    <Compile Include="ServerForTrackers\Service\RudicsConnection.cs" />
+    <Compile Include="ServerForTrackers\Service\RudicsAccount.cs" />
+    <Compile Include="ServerForTrackers\Service\RudicsClientHandler.cs" />
+    <Compile Include="ServerForTrackers\Service\SbdDirectIpClient.cs" />
+    <Compile Include="ServerForTrackers\Service\SbdDirectIpClientHandler.cs" />
+    <Compile Include="ServerForTrackers\Service\SbdDirectIpAccount.cs" />
+    <Compile Include="ServerForTrackers\Service\ServerForTrackersService.cs" />
+    <Compile Include="ServerForTrackers\Service\Program.cs" />
+    <Compile Include="ServerForTrackers\Service\ServerModem.cs" />
+    <Compile Include="ServerForTrackers\Service\TcpProtocolClientHandler.cs" />
+    <Compile Include="ServerForTrackers\Service\TcpServerQueues.cs" />
+    <Compile Include="DataCallPackets\TimerWrapper.cs" />
+    <Compile Include="DataCallPackets\PacketDataCallHandler.cs" />
+    <Compile Include="SbdDirectIP\SbdDirectIPMessage.cs" />
+    <Compile Include="SbdDirectIP\MOConfirmationIE.cs" />
+    <Compile Include="SbdDirectIP\SbdDirectIPClient.cs" />
+    <Compile Include="SbdDirectIP\GenericIE.cs" />
+    <Compile Include="SbdDirectIP\InfoElement.cs" />
+    <Compile Include="SbdDirectIP\InfoElementParser.cs" />
+    <Compile Include="SbdDirectIP\MOHeaderIE.cs" />
+    <Compile Include="SbdDirectIP\MOLocationIE.cs" />
+    <Compile Include="SbdDirectIP\MTConfirmationIE.cs" />
+    <Compile Include="SbdDirectIP\MTHeaderIE.cs" />
+    <Compile Include="SbdDirectIP\SbdDirectIPClientSendCompletedEventArgs.cs" />
+    <Compile Include="RemoteUpdate\CoordinateCollection.cs" />
+    <Compile Include="RemoteUpdate\EnumExtensions.cs" />
+    <Compile Include="RemoteUpdate\StringExtensions.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3ManDownFlags.cs" />
+    <Compile Include="RemoteUpdate\Coordinate.cs" />
+    <Compile Include="RemoteUpdate\StatusReport0.cs" />
+    <Compile Include="RemoteUpdate\StatusReport0EmergencyActivationSource.cs" />
+    <Compile Include="RemoteUpdate\StatusReport0Item.cs" />
+    <Compile Include="RemoteUpdate\StatusReport0Tag.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest0.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest1.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest1BlockInvalidGpsReportsValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest2.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest2BlockInvalidGpsReportsValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest2CallableValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest2SamePlaceSkipReportsMode.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3AddCallOutScheduleLink.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3CallableValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3DataCallDestinationType.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3EmergencyAcknowledgementValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3GeofenceOptions.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3GsmSendMethodValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3GsmTcpConnectionTypeValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3InputPinOptions.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3InputPinType.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3Item.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3LinksAllowedLinks.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3LinksPrimaryLink.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3ReportFormatValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3ResponseMethodValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3SamePlaceSkipReportsMode.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3SmsDestinationType.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3SuccessfulSendRequiredValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3Tag.cs" />
+    <Compile Include="RemoteUpdate\UpdateRequest3TrackingMethodValue.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse0.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse1.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse2.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse3.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse3Item.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse3ItemResult.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponse3Validation.cs" />
+    <Compile Include="RemoteUpdate\UpdateResponseStatus.cs" />
+    <Compile Include="Network\ClientConnectedEventArgs.cs" />
+    <Compile Include="Network\ExceptionEventArgs.cs" />
+    <Compile Include="Network\MimeBodyPart.cs" />
+    <Compile Include="Network\Pop3ResponseReceivedEventHandler.cs" />
+    <Compile Include="Network\Pop3Command.cs" />
+    <Compile Include="Network\Pop3ResponseType.cs" />
+    <Compile Include="Network\Pop3ResponseReceivedEventArgs.cs" />
+    <Compile Include="Network\Pop3Client.cs" />
+    <Compile Include="Network\SocketWrapper.cs" />
+    <Compile Include="Network\TcpClientWrapper.cs" />
+    <Compile Include="Network\DataReceivedEventArgs.cs" />
+    <Compile Include="Network\TcpListenerWrapper.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ServerForTrackers\Service\HiddenForm.resx" />
+    <EmbeddedResource Include="ServerForTrackers\Service\ProjectInstaller.resx" />
+    <EmbeddedResource Include="ServerForTrackers\Service\ServerForTrackersService.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
